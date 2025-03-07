@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    display: block;
+  }
+  
+  body{
+    background-color: pink;
+    font-family: "Funnel Display", sans-serif;
+  }
+  
+  header{
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo{
+    width: 63vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-family: Lexend Deca,Funnel Display, sans-serif;
+    font-weight: thin;
+  }
+  
+  .logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  nav{
+    font-weight: 400;
+    display: block;
+    width: 50%;
+  }
+  
+  nav > ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: pink;
+  }
+  
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+  }
+  
+  #hero h2{
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  #hero input{
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #hero input[type="submit"], #Pricing form input[type="submit"]{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 150px;
+    height: 30px;
+    background-color: black;
+    color: pink;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0 20px;
+  }
+  
+  .container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #Features{
+    margin-top: 10px;
+    margin: 0 100px;
+  }
+  
+  .grid{
+    display: flex;
+  }
+  
+  #Features .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+  }
+  
+  .material-symbols-outlined{
+    font-weight: 900px;
+    font-size: 3em;
+  }
+  
+  #Features .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+  }
+  
+  #Testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  #Testimonials > iframe{
+    width: 100%;
+    max-width: 600px;
+    max-height: 300px;
+  }
+  
+  #Testimonials a:hover{
+    color: rgb(76, 76, 221);
+  }
+  
+  #Pricing{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 15px;
+    height: 100%;
+    /* min-height: 390px; for media */
+  }
+  
+  .plan{
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    border-radius: 10px;
+    background-color: pink;
+  }
+  
+  #Pricing h2{
+    padding: 10px;
+  }
+  
+  #Pricing h2 span{
+    font-weight: thin;
+    font-size: 0.8rem;
+  }
+  
+  .product > ul{
+    flex-grow: 1;
+    margin: auto auto;
+  }
+  
+  .product > ul > li{
+    padding: 5px 0;
+    list-style: none;
+    margin: auto auto;
+  }
+  
+  .btn{
+    margin-top: auto;
+  }
+  
+  footer{
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  footer > ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer > ul > li{
+    padding: 0 20px;
+    list-style: none;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      width: 100%;
+      text-align: center;
+    }
+    
+    nav > ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .grid{
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #Features .description {
+    width: calc(100% - 20vw); /* Adjusts dynamically */
+    text-align: center;
+    }
+  
+    header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #hero{
+      margin-top: 100px;
+    }
+  
+    footer > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+  
+    #Testimonials > iframe{
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+  }
+  
+  }
+  
